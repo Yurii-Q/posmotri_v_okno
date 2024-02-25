@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  padding-block-start: 133px;
 }
 
 h1,
@@ -35,4 +38,232 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  block-size: 534px;
+  display: grid;
+  grid-template-columns: 711px 399px;
+  gap: 30px;
+}
+
+.content__details {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  position: relative;
+  block-size: 310px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.content__list-item {
+  padding: 2px;
+}
+
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
+.content__list-item:not(:nth-last-child(2)) {
+  margin-block-end: 30px;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__card-link_current {
+  background: #545050;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-description-container {
+  justify-self: stretch;
+}
+
+.content__video-card-title {
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.content__video-card-thumbnail {
+  inline-size: 194px;
+  block-size: 103px;
+}
+
+.title {
+  font-family: Oswald, serif;
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 70.5px;
+  margin-block-end: 30px;
+}
+
+.result__video-container {
+  padding-block-start: 78px;
+  padding-block-end: 16px;
+  position: relative;
+}
+
+.result__video {
+  inline-size: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-form__label:focus {
+  border: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__label:hover:not(:has(.search-form__textfield)) {
+  text-decoration: underline;
+}
+
+.search-form__label-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.search-form__textfield {
+  appearance: none;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  color: #fff;
+  line-height: 22px;
+  background: transparent;
+  border: none;
+  width: 225px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #fff;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  inline-size: 19px;
+  block-size: 19px;
+  border: 1px solid #fff;
+  margin-inline-end: 5px;
+  vertical-align: middle;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  background: #fff;
+  outline: 1px solid #000;
+  outline-offset: -2px;
+}
+
+.search-form__submit-button {
+  inline-size: 194px;
+  align-self: end;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid #fff;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 22px;
+  block-size: 34px;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.button:active {
+  background: #545050;
+}
+
+.preloader {
+  position: absolute;
+}
+
+.more-button {
+  inline-size: 100%;
+  margin: 30px 2px 2px;
 }
