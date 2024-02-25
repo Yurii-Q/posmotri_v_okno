@@ -51,7 +51,6 @@ ol {
 }
 
 .content {
-  block-size: 534px;
   display: grid;
   grid-template-columns: 711px 399px;
   gap: 30px;
@@ -68,7 +67,7 @@ ol {
 
 .content__list {
   position: relative;
-  block-size: 310px;
+  block-size: 298px;
   overflow: auto;
   overflow-x: hidden;
 }
@@ -99,6 +98,10 @@ ol {
   outline: 1px solid #fff;
 }
 
+.content__card-link:active {
+  background: #545050;
+}
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
@@ -109,9 +112,11 @@ ol {
 }
 
 .content__video-card-title {
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
+  margin-block-end: 6px;
 }
 
 .content__video-card-description {
@@ -125,22 +130,26 @@ ol {
 }
 
 .title {
-  font-family: Oswald, serif;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 70.5px;
-  margin-block-end: 30px;
+  margin-block-end: 26px;
 }
 
 .result__video-container {
-  padding-block-start: 78px;
-  padding-block-end: 16px;
+  inline-size: 711px;
+  block-size: 386px;
+  margin-block-start: 78px;
+  margin-block-end: 16px;
   position: relative;
 }
 
 .result__video {
   inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
 }
 
 .search-form {
@@ -156,7 +165,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -189,13 +198,14 @@ ol {
 
 .search-form__textfield {
   appearance: none;
-  font-family: 'Fira Sans Condensed';
+  font-family: inherit;
   font-size: 18px;
   color: #fff;
   line-height: 22px;
   background: transparent;
   border: none;
   width: 225px;
+  min-height: 27px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
@@ -237,12 +247,13 @@ ol {
 .button {
   background: transparent;
   border: 1px solid #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
   line-height: 22px;
-  block-size: 34px;
+  padding-block-start: 6px;
+  padding-block-end: 6px;
   cursor: pointer;
 }
 
